@@ -1,40 +1,32 @@
 <template>
   <v-app>
     <v-app-bar
-      app
-      color="primary"
+      color="white"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+      <!-- <v-app-bar-nav-icon>X</v-app-bar-nav-icon> -->
+      <v-img height="48" width="137" src='./assets/logo.svg'></v-img>
       <v-spacer></v-spacer>
-
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">HOME</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">ABOUT</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">PROGRAMS</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">EVENTS</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">SCHOOLS</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">JOBS</v-btn></v-toolbar-title>
+      <v-toolbar-title class='mx-4'><v-btn text color="#606060">CONTACT US</v-btn></v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+      text
+      color="#606060"
+      class="text-capitalize"
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <v-icon left >
+          mdi-account-circle
+        </v-icon>
+        Member
       </v-btn>
+      
+       
     </v-app-bar>
 
     <v-main>
